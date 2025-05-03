@@ -285,10 +285,14 @@ if __name__ == "__main__":
 
 ```bash
 git checkout main
+git branch
+git pull origin main
 git merge development
+git push origin main
 ```
 
-*[Screenshot: git merge process]*
+<img width="658" alt="Screenshot 2025-05-03 at 17 32 34" src="https://github.com/user-attachments/assets/5d6609a4-0b9a-465f-8ddf-d8e385f6a7da" />
+
 
 ## z) Sharing Repository URL with a Friend
 
