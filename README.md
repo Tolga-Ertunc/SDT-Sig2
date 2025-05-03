@@ -170,7 +170,7 @@ git blame src/Main.java
 
 ```bash
 git log --oneline
-git checkout <commit-hash>
+git checkout d635e70
 ```
 <img width="671" alt="Screenshot 2025-05-03 at 17 10 25" src="https://github.com/user-attachments/assets/6d460c09-5ea7-402e-b7ca-1680b3dff81d" />
 
@@ -198,8 +198,8 @@ git restore src/main.py
 ```bash
 git push origin main
 ```
+<img width="557" alt="Screenshot 2025-05-03 at 17 16 24" src="https://github.com/user-attachments/assets/01872b0e-4fb6-49c6-af4e-31f364dbfbf1" />
 
-*[Screenshot: git push process]*
 
 ## r) Deleting Local Project and Repository
 
@@ -207,8 +207,8 @@ git push origin main
 cd ..
 rm -rf SDT-Sig2
 ```
+<img width="360" alt="Screenshot 2025-05-03 at 17 18 57" src="https://github.com/user-attachments/assets/b21e2f06-b17e-4c63-b0b0-9a444fec6f2d" />
 
-*[Screenshot: deleting local repository]*
 
 ## s) Cloning Project from Remote Repository
 
