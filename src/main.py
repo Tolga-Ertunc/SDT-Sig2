@@ -12,10 +12,12 @@ def main():
         my_list[i] = random.randint(1, 100)
         print(f"my_list[{i}] = {my_list[i]}")
     
-    # Sorting list elements for task I/i    
+    # Sorting list elements for taks I/i
     print("\nBefore sorting:")
     print_list(my_list)
     
+    # Change: adding a message about the sorting algorithm
+    print("\nSorting using Python's built-in sort (development branch)")
     my_list.sort()
     
     print("\nAfter sorting:")
