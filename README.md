@@ -109,45 +109,37 @@ git commit -m "Table initialized with some random values"
 
 ## i) Adding More Code (Sorting Table Elements)
 
-```java
-import java.util.Arrays;
-import java.util.Random;
+```python
+import random
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("GIT Assignment Project");
-        
-        // Creating table
-        int[] table = new int[10];
-        System.out.println("Table created, size: " + table.length);
-        
-        // Filling table with random values
-        Random random = new Random();
-        for (int i = 0; i < table.length; i++) {
-            table[i] = random.nextInt(100);
-            System.out.println("table[" + i + "] = " + table[i]);
-        }
-        
-        // Sorting table elements
-        System.out.println("\nBefore sorting:");
-        printArray(table);
-        
-        Arrays.sort(table);
-        
-        System.out.println("\nAfter sorting:");
-        printArray(table);
-    }
+def main():
+    print("GIT Assignment Project-SDT")
     
-    private static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-    }
-}
+    # Creating a list
+    my_list = [0] * 10
+    print(f"List created, size: {len(my_list)}")
+    
+    # Filling list with some random values
+    for i in range(len(my_list)):
+        my_list[i] = random.randint(1, 100)
+        print(f"my_list[{i}] = {my_list[i]}")
+    
+    # Sorting list elements for task I/i    
+    print("\nBefore sorting:")
+    print_list(my_list)
+    
+    my_list.sort()
+    
+    print("\nAfter sorting:")
+    print_list(my_list)
+
+def print_list(lst):
+    print(' '.join(map(str, lst)))
+
+if __name__ == "__main__":
+    main()
 ```
 
-*[Screenshot: Sorting code in editor]*
 
 ## j) Committing Changes
 
@@ -156,23 +148,23 @@ git add src/Main.java
 git commit -m "Added table sorting code"
 ```
 
-*[Screenshot: Sorting commit]*
+<img width="585" alt="Screenshot 2025-05-03 at 17 06 03" src="https://github.com/user-attachments/assets/233e7999-8489-4831-b770-71563af7f666" />
 
 ## k) Viewing Code History (git log)
 
 ```bash
 git log
 ```
+<img width="813" alt="Screenshot 2025-05-03 at 17 06 43" src="https://github.com/user-attachments/assets/9a3ff932-dfeb-439d-bf38-343578e89d00" />
 
-*[Screenshot: git log output]*
 
 ## l) Viewing Code Annotations (git blame)
 
 ```bash
 git blame src/Main.java
 ```
+<img width="691" alt="Screenshot 2025-05-03 at 17 08 26" src="https://github.com/user-attachments/assets/3a337b4f-a1ba-471c-bed1-09f3574f4a86" />
 
-*[Screenshot: git blame output]*
 
 ## m) Checking Out Different Revisions
 
@@ -180,25 +172,26 @@ git blame src/Main.java
 git log --oneline
 git checkout <commit-hash>
 ```
+<img width="671" alt="Screenshot 2025-05-03 at 17 10 25" src="https://github.com/user-attachments/assets/6d460c09-5ea7-402e-b7ca-1680b3dff81d" />
 
-*[Screenshot: git checkout process]*
 
 ## n-o) Making Changes and Reverting
 
 I made changes to the file without committing:
 
-```java
+```python
 // Increased table capacity (will not commit)
-int[] table = new int[20];
+ my_list = [0] * 12
 ```
+<img width="574" alt="Screenshot 2025-05-03 at 17 12 01" src="https://github.com/user-attachments/assets/77daaf0f-c66b-431c-aada-e7d01f363dd5" />
 
 Reverting changes:
 
 ```bash
-git restore src/Main.java
+git restore src/main.py
 ```
+<img width="440" alt="Screenshot 2025-05-03 at 17 13 22" src="https://github.com/user-attachments/assets/b98fd408-34a1-46b7-818b-2443ef40d15f" />
 
-*[Screenshot: git restore process]*
 
 ## p) Pushing the Project to the Remote Repository
 
