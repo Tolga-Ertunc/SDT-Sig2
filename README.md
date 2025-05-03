@@ -46,7 +46,6 @@ git add .
 git commit -m "Initial commit: Created a empty project"
 ```
 
-*[Screenshot: First commit in Terminal]*
 <img width="683" alt="Screenshot 2025-05-03 at 16 32 04" src="https://github.com/user-attachments/assets/b79922b8-6fa8-4d3f-9405-4cddc24dbc2b" />
 
 
