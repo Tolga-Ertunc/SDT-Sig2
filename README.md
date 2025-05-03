@@ -30,7 +30,7 @@ Creating project folder via Terminal:
 
 ```bash
 mkdir src
-touch src/Main.java
+touch src/main.py
 ```
 
 Writing some example code:
@@ -180,7 +180,7 @@ git checkout d635e70
 I made changes to the file without committing:
 
 ```python
-// Increased table capacity (will not commit)
+# Increased table capacity (will not commit)
  my_list = [0] * 12
 ```
 <img width="574" alt="Screenshot 2025-05-03 at 17 12 01" src="https://github.com/user-attachments/assets/77daaf0f-c66b-431c-aada-e7d01f363dd5" />
@@ -311,7 +311,7 @@ Resolving the conflict:
 *[Screenshot: conflict resolution editor]*
 
 ```bash
-git add src/Main.java
+git add src/main.py
 git commit -m "Conflict resolved"
 git push origin main
 ```
