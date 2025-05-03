@@ -17,8 +17,7 @@ Via Terminal:
 git clone https://github.com/Tolga-Ertunc/SDT-Sig2.git
 cd SDT-Sig2
 ```
-
-*[Screenshot: Cloning in Terminal]*
+<img width="596" alt="Screenshot 2025-05-03 at 16 22 25" src="https://github.com/user-attachments/assets/c8983148-4bee-42c7-ad0d-d961dd57a4bf" />
 
 Via VS Code:
 
@@ -26,7 +25,10 @@ Via VS Code:
 
 ## c) Creating an Empty Project in the Local Repository
 
-Preferred language: Java
+Preferred language: Python
+
+<img width="719" alt="Screenshot 2025-05-03 at 16 28 16" src="https://github.com/user-attachments/assets/b1b2bddb-d950-4db8-8e46-db0efa5afb46" />
+
 
 Creating project folder via Terminal:
 
@@ -35,17 +37,9 @@ mkdir src
 touch src/Main.java
 ```
 
-Writing my first code:
+Writing some example code:
 
-```java
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("GIT Assignment Project");
-    }
-}
-```
-
-*[Screenshot: Creating empty project]*
+<img width="491" alt="Screenshot 2025-05-03 at 16 29 30" src="https://github.com/user-attachments/assets/54d99e03-2c0f-4a58-af16-622eabd67c28" />
 
 ## d) Committing the Project to the Repository
 
