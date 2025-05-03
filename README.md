@@ -19,10 +19,6 @@ cd SDT-Sig2
 ```
 <img width="596" alt="Screenshot 2025-05-03 at 16 22 25" src="https://github.com/user-attachments/assets/c8983148-4bee-42c7-ad0d-d961dd57a4bf" />
 
-Via VS Code:
-
-*[Screenshot: Cloning in VS Code]*
-
 ## c) Creating an Empty Project in the Local Repository
 
 Preferred language: Python
@@ -47,32 +43,29 @@ Via Terminal:
 
 ```bash
 git add .
-git commit -m "Initial commit: Empty project created"
+git commit -m "Initial commit: Created a empty project"
 ```
 
 *[Screenshot: First commit in Terminal]*
+<img width="683" alt="Screenshot 2025-05-03 at 16 32 04" src="https://github.com/user-attachments/assets/b79922b8-6fa8-4d3f-9405-4cddc24dbc2b" />
 
-Via VS Code:
-
-*[Screenshot: Commit in VS Code]*
 
 ## e) Adding Simple Code (Creating a Table)
 
-I edited the Main.java file to add table creation code:
+I edited the main.py file to add list creation code:
 
-```java
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("GIT Assignment Project");
-        
-        // Creating table
-        int[] table = new int[10];
-        System.out.println("Table created, size: " + table.length);
-    }
-}
+```python
+def main():
+    print("GIT Assignment Project-SDT")
+    
+    # Creating a basic list
+    my_list = [0] * 10
+    print(f"List created, size: {len(my_list)}")
+
+if __name__ == "__main__":
+    main()
 ```
-
-*[Screenshot: Table creation code in editor]*
+<img width="436" alt="Screenshot 2025-05-03 at 16 34 38" src="https://github.com/user-attachments/assets/069f34f6-484c-4e99-b1c3-7995fd25df42" />
 
 ## f) Committing Changes
 
@@ -81,7 +74,7 @@ git add src/Main.java
 git commit -m "Added table creation code"
 ```
 
-*[Screenshot: Table code commit]*
+<img width="603" alt="Screenshot 2025-05-03 at 16 36 05" src="https://github.com/user-attachments/assets/bc4cee08-5442-47f4-b20e-2913c09e53e5" />
 
 ## g) Adding More Code (Initializing Table with Random Values)
 
