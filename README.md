@@ -1,7 +1,7 @@
 # SDT-Sig2
 # GIT Project Report
 
-This report documents the process of creating, developing, and managing a project using GIT commands. All steps were performed using both Terminal and IDE (Visual Studio Code) on macOS.
+This  process documents creating, developing, and managing a project using GIT commands. All steps were performed using both Terminal and IDE (Visual Studio Code) on macOS.
 
 ## a) Creating a Remote Repository (GitHub)
 
@@ -69,7 +69,7 @@ if __name__ == "__main__":
 ## f) Committing Changes
 
 ```bash
-git add src/Main.java
+git add src/main.py
 git commit -m "Added table creation code"
 ```
 
@@ -144,7 +144,7 @@ if __name__ == "__main__":
 ## j) Committing Changes
 
 ```bash
-git add src/Main.java
+git add src/main.py
 git commit -m "Added table sorting code"
 ```
 
@@ -161,7 +161,7 @@ git log
 ## l) Viewing Code Annotations (git blame)
 
 ```bash
-git blame src/Main.java
+git blame src/main.py
 ```
 <img width="691" alt="Screenshot 2025-05-03 at 17 08 26" src="https://github.com/user-attachments/assets/3a337b4f-a1ba-471c-bed1-09f3574f4a86" />
 
