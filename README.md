@@ -77,37 +77,35 @@ git commit -m "Added table creation code"
 
 ## g) Adding More Code (Initializing Table with Random Values)
 
-```java
-import java.util.Random;
+```python
+import random
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("GIT Assignment Project");
-        
-        // Creating table
-        int[] table = new int[10];
-        System.out.println("Table created, size: " + table.length);
-        
-        // Filling table with random values
-        Random random = new Random();
-        for (int i = 0; i < table.length; i++) {
-            table[i] = random.nextInt(100);
-            System.out.println("table[" + i + "] = " + table[i]);
-        }
-    }
-}
+def main():
+    print("GIT Assignment Project-SDT")
+    
+    # Creating a list
+    my_list = [0] * 10
+    print(f"List created, size: {len(my_list)}")
+    
+    # Adding some random values for task G
+    for i in range(len(my_list)):
+        my_list[i] = random.randint(1, 100)
+        print(f"my_list[{i}] = {my_list[i]}")
+
+if __name__ == "__main__":
+    main()
 ```
 
-*[Screenshot: Random values code in editor]*
+<img width="484" alt="Screenshot 2025-05-03 at 17 01 16" src="https://github.com/user-attachments/assets/3ed1cabb-0eee-4df4-9ba3-7fc589929a31" />
 
 ## h) Committing Changes
 
 ```bash
-git add src/Main.java
-git commit -m "Table initialized with random values"
+git add src/main.py
+git commit -m "Table initialized with some random values"
 ```
 
-*[Screenshot: Random values commit]*
+<img width="690" alt="Screenshot 2025-05-03 at 17 00 43" src="https://github.com/user-attachments/assets/9e3d97e2-4d37-49ca-8f7d-5b73967ef2c1" />
 
 ## i) Adding More Code (Sorting Table Elements)
 
