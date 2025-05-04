@@ -27,5 +27,11 @@ def print_list(lst):
     print(' '.join(map(str, lst)))
 
 if __name__ == "__main__":
+    print("This is a new line to create a conflict")
+    print("Testing conflict resolution in Git")
+    print("This is our second push, this will create a conflict")
+    print("")
+    print("Learning how to resolve conflicts")
+    print("This is the final line to create a conflict")
     print("This will create a conflict")
     main()

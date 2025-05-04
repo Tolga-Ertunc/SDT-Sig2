@@ -1,7 +1,7 @@
 # SDT-Sig2
 # GIT Project Report
 
-This report documents the process of creating, developing, and managing a project using GIT commands. All steps were performed using both Terminal and IDE (Visual Studio Code) on macOS.
+This  process documents creating, developing, and managing a project using GIT commands. All steps were performed using both Terminal and IDE (Visual Studio Code) on macOS.
 
 ## a) Creating a Remote Repository (GitHub)
 
@@ -30,7 +30,7 @@ Creating project folder via Terminal:
 
 ```bash
 mkdir src
-touch src/Main.java
+touch src/main.py
 ```
 
 Writing some example code:
@@ -69,7 +69,7 @@ if __name__ == "__main__":
 ## f) Committing Changes
 
 ```bash
-git add src/Main.java
+git add src/main.py
 git commit -m "Added table creation code"
 ```
 
@@ -144,7 +144,7 @@ if __name__ == "__main__":
 ## j) Committing Changes
 
 ```bash
-git add src/Main.java
+git add src/main.py
 git commit -m "Added table sorting code"
 ```
 
@@ -161,7 +161,7 @@ git log
 ## l) Viewing Code Annotations (git blame)
 
 ```bash
-git blame src/Main.java
+git blame src/main.py
 ```
 <img width="691" alt="Screenshot 2025-05-03 at 17 08 26" src="https://github.com/user-attachments/assets/3a337b4f-a1ba-471c-bed1-09f3574f4a86" />
 
@@ -180,7 +180,7 @@ git checkout d635e70
 I made changes to the file without committing:
 
 ```python
-// Increased table capacity (will not commit)
+# Increased table capacity (will not commit)
  my_list = [0] * 12
 ```
 <img width="574" alt="Screenshot 2025-05-03 at 17 12 01" src="https://github.com/user-attachments/assets/77daaf0f-c66b-431c-aada-e7d01f363dd5" />
@@ -215,8 +215,7 @@ rm -rf SDT-Sig2
 ```bash
 git clone https://github.com/Tolga-Ertunc/SDT-Sig2.git
 ```
-
-*[Screenshot: re-cloning process]*
+<img width="654" alt="Screenshot 2025-05-03 at 17 20 30" src="https://github.com/user-attachments/assets/4dbbd41c-4570-4cf7-8af5-e01a78b37316" />
 
 ## t) Creating Tag/Release and Switching Between Tag and Master Branch
 
@@ -226,50 +225,74 @@ git tag
 git checkout v1.0
 git checkout main
 ```
+<img width="697" alt="Screenshot 2025-05-03 at 17 22 19" src="https://github.com/user-attachments/assets/6175d324-1576-4606-85af-18cfafa5ae8b" />
 
-*[Screenshot: git tag process]*
 
 ## u-w) Creating a New Branch and Switching to It
 
 ```bash
 git branch development
 git checkout development
-# or
-git checkout -b development
 ```
+<img width="511" alt="Screenshot 2025-05-03 at 17 23 20" src="https://github.com/user-attachments/assets/d09c5137-2f53-4d36-9945-3fd5197b2786" />
 
-*[Screenshot: git branch process]*
+
+<img width="468" alt="Screenshot 2025-05-03 at 17 24 50" src="https://github.com/user-attachments/assets/3f21e651-5021-4f36-8d40-92c25537ae73" />
+
+
 
 ## x) Improving Code in a Branch
 
-I improved the sorting algorithm by adding bubble sort:
+I added some changes to my python code.
 
-```java
-private static void bubbleSort(int[] arr) {
-    int n = arr.length;
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                // Swap
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-    }
-}
+```python
+import random
+
+def main():
+    print("GIT Assignment Project-SDT")
+    
+    # Creating a list
+    my_list = [0] * 10
+    print(f"List created, size: {len(my_list)}")
+    
+    # Filling list with some random values
+    for i in range(len(my_list)):
+        my_list[i] = random.randint(1, 100)
+        print(f"my_list[{i}] = {my_list[i]}")
+    
+    # Sorting list elements for taks I/i
+    print("\nBefore sorting:")
+    print_list(my_list)
+    
+    # Change: adding a message about the sorting algorithm
+    print("\nSorting using Python's built-in sort (development branch)")
+    my_list.sort()
+    
+    print("\nAfter sorting:")
+    print_list(my_list)
+
+def print_list(lst):
+    print(' '.join(map(str, lst)))
+
+if __name__ == "__main__":
+    main()
 ```
+<img width="695" alt="Screenshot 2025-05-03 at 17 28 25" src="https://github.com/user-attachments/assets/4f28841f-b607-4400-8d35-798439612085" />
 
-*[Screenshot: code improvement in development branch]*
+
 
 ## y) Merging the Branch into the Master Branch
 
 ```bash
 git checkout main
+git branch
+git pull origin main
 git merge development
+git push origin main
 ```
 
-*[Screenshot: git merge process]*
+<img width="658" alt="Screenshot 2025-05-03 at 17 32 34" src="https://github.com/user-attachments/assets/5d6609a4-0b9a-465f-8ddf-d8e385f6a7da" />
+
 
 ## z) Sharing Repository URL with a Friend
 
@@ -288,7 +311,7 @@ Resolving the conflict:
 *[Screenshot: conflict resolution editor]*
 
 ```bash
-git add src/Main.java
+git add src/main.py
 git commit -m "Conflict resolved"
 git push origin main
 ```
