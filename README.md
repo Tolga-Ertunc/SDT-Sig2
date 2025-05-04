@@ -296,33 +296,24 @@ git push origin main
 
 ## z) Sharing Repository URL with a Friend
 
-I gave my friend access to the repository on GitHub.
+I gave my brother access to the repository on GitHub.
 
-*[Screenshot: adding collaborator on GitHub]*
+<img width="789" alt="Screenshot 2025-05-04 at 15 57 38" src="https://github.com/user-attachments/assets/ca777b16-aa56-4ae6-8bf0-68c71874f098" />
+
 
 ## z1-z2) Creating and Resolving Conflicts
 
-My friend and I edited the same file, creating a conflict.
+I edited 1 branch, then edited the other branch and created a conflict while merging the 2 branches with main.
 
-*[Screenshot: git conflict message]*
 
-Resolving the conflict:
+<img width="691" alt="Screenshot 2025-05-04 at 15 47 01" src="https://github.com/user-attachments/assets/95101899-0116-4a80-865d-e5a691c9983a" />
+<img width="1206" alt="Screenshot 2025-05-04 at 15 48 06" src="https://github.com/user-attachments/assets/493c6c11-4ba4-4348-8c75-609203fd19bc" />
+<img width="1182" alt="Screenshot 2025-05-04 at 15 50 54" src="https://github.com/user-attachments/assets/dc49551c-12a6-4a9b-9bf8-817dacbe3290" />
 
-*[Screenshot: conflict resolution editor]*
-
-```bash
-git add src/main.py
-git commit -m "Conflict resolved"
-git push origin main
-```
-
-*[Screenshot: conflict resolution commit]*
 
 ## z3) Sending Repository URL to Teacher
 
-I gave my teacher access to the repository and sent the URL via email.
-
-*[Screenshot: adding teacher access on GitHub]*
+Send the repository url as mail.  
 
 ## Tools Used
 
