@@ -27,4 +27,5 @@ def print_list(lst):
     print(' '.join(map(str, lst)))
 
 if __name__ == "__main__":
+    print("This will create a conflict")
     main()
