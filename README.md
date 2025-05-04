@@ -313,7 +313,7 @@ I edited 1 branch, then edited the other branch and created a conflict while mer
 
 ## z3) Sending Repository URL to Teacher
 
-Send the repository url as mail.  
+Sent the repository url as mail.  
 
 ## Tools Used
 
