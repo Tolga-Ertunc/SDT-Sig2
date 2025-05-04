@@ -33,4 +33,5 @@ if __name__ == "__main__":
     print("")
     print("Learning how to resolve conflicts")
     print("This is the final line to create a conflict")
+    print("This will create a conflict")
     main()
